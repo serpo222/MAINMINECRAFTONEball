@@ -25,7 +25,7 @@ function AutoLowRange()
         mode = 'Hold', -- // Hold , Toggle , Always \\ --
         deflect_type = 'Remote', -- // Key Press , Remote \\ --
         notifications = false,
-        keybind = Enum.KeyCode.R
+        keybind = Enum.KeyCode.E
      }
      
      
@@ -269,7 +269,7 @@ function AutoHighRange()
         mode = 'Hold', -- // Hold , Toggle , Always \\ --
         deflect_type = 'Remote', -- // Key Press , Remote \\ --
         notifications = false,
-        keybind = Enum.KeyCode.R
+        keybind = Enum.KeyCode.E
      }
      
      
@@ -416,6 +416,6 @@ AutoChannel:Toggle(
 
 
 
-MiscellanousChannel:Slider("Walkspeed", 0, 300, 25, function(t)
+MiscellanousChannel:Slider("Walkspeed", 0, 300, 30, function(t)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
 end)
