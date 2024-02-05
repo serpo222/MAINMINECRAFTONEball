@@ -136,7 +136,7 @@ function AutoMediumRange()
 end
 
 
-AutoMediumRange:Toggle(
+AutoChannele:Toggle(
     "Turn On To Enable Medium Range",
     false,
     function(bool)
