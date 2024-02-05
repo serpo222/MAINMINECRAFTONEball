@@ -436,6 +436,6 @@ AutoChannel:Toggle(
 )
 
 
-MiscellanousChannel:Slider("Walkspeed", 0, 1000, 400, function(t)
+MiscellanousChannel:Slider("Walkspeed", 0, 300, 25, function(t)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
-    end)
+end)
