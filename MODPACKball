@@ -388,7 +388,7 @@ AutoChannel:Label("Enable the range you want, and hold down E to auto parry.")
 AutoChannel:Label("Lower ranges may require you to manually click after skills are used on you.")
 
 AutoChannel:Toggle(
-    "Turn On To Enable Medium Range Parry",
+    "Turn On To Enable Low Range Parry",
     false,
     function(bool)
         _G.AutoLowRange = bool
@@ -406,7 +406,7 @@ AutoChannel:Toggle(
 )
 
 AutoChannel:Toggle(
-    "Turn On To Enable Medium Range Parry",
+    "Turn On To Enable High Range Parry",
     false,
     function(bool)
         _G.AutoHighRange = bool
