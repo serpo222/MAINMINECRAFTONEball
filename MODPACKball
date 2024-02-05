@@ -21,7 +21,7 @@ function AutoMediumRange()
         mode = 'Hold', -- // Hold , Toggle , Always \\ --
         deflect_type = 'Remote', -- // Key Press , Remote \\ --
         notifications = false,
-        keybind = Enum.KeyCode.R
+        keybind = Enum.KeyCode.E
      }
      
      
@@ -135,9 +135,10 @@ function AutoMediumRange()
      getgenv().executed = true
 end
 
+AutoChannel:Label("Once you enable something, hold E or press it once to activate auto-parry")
 
 AutoChannel:Toggle(
-    "Turn On To Enable Medium Range",
+    "Turn On To Enable Medium Range Parry",
     false,
     function(bool)
         _G.AutoMediumRange = bool
