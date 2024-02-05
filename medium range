@@ -4,7 +4,7 @@ shared.config = {
 
    mode = 'Hold', -- // Hold , Toggle , Always \\ --
    deflect_type = 'Remote', -- // Key Press , Remote \\ --
-   notifications = true,
+   notifications = false,
    keybind = Enum.KeyCode.R
 }
 
