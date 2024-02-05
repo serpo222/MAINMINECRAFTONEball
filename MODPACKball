@@ -8,7 +8,8 @@ local win = DiscordLib:Window("ASX GRAM HUB https://discord.gg/FAPCdbW9q6 discor
 
 local serv = win:Server("Blade Ball", "")
 
-local AutoChannel = serv:Channel("Auto Channel")
+local AutoChannel = serv:Channel("Auto Parry")
+local MiscellanousChannel = serv:Channel("Miscellanous")
 
 _G.AutoLowRange = true
 _G.AutoMediumRange = true
@@ -433,3 +434,8 @@ AutoChannel:Toggle(
         Walkspeed()
     end
 )
+
+
+MiscellanousChannel:Slider("Walkspeed", 0, 1000, 400, function(t)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
+    end)
