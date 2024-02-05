@@ -20,7 +20,7 @@ function AutoMediumRange()
      
         mode = 'Hold', -- // Hold , Toggle , Always \\ --
         deflect_type = 'Remote', -- // Key Press , Remote \\ --
-        notifications = false,
+        notifications = true,
         keybind = Enum.KeyCode.E
      }
      
