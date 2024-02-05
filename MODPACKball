@@ -136,11 +136,12 @@ function AutoMediumRange()
 end
 
 
-DefenseChannel:Toggle(
-    "Loop Start Defense",
+AutoMediumRange:Toggle(
+    "Turn On To Enable Medium Range",
     false,
     function(bool)
         _G.AutoMediumRange = bool
         AutoMediumRange()
     end
 )
+
