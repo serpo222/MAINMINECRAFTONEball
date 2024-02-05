@@ -14,6 +14,8 @@ _G.AutoLowRange = true
 _G.AutoMediumRange = true
 _G.AutoHighRange = true
 
+_G.Walkspeed = true
+
 function AutoLowRange()
     shared.config = {
         adjustment = 3.2, -- // Keep this between 3 to 4 \\ --
@@ -380,6 +382,18 @@ function AutoHighRange()
      getgenv().executed = true
 end
 
+function Walkspeed()
+    -- Get the player and character
+    local player = game.Players.LocalPlayer
+    local character = player.Character or player.CharacterAdded:Wait()
+
+    -- Set the walkspeed
+    local newWalkspeed = character:WaitForChild("Humanoid").WalkSpeed + 10
+    character:WaitForChild("Humanoid").WalkSpeed = newWalkspeed
+end
+
+
+
 AutoChannel:Label("Enable the range you want, and hold down E to auto parry.")
 AutoChannel:Label("Lower ranges may require you to manually click after skills are used on you.")
 
@@ -407,5 +421,15 @@ AutoChannel:Toggle(
     function(bool)
         _G.AutoHighRange = bool
         AutoHighRange()
+    end
+)
+
+
+AutoChannel:Toggle(
+    "Slightly Increase Walkspeed",
+    false,
+    function(bool)
+        _G.Walkspeed = bool
+        Walkspeed()
     end
 )
